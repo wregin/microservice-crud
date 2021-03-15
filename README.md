@@ -1,8 +1,8 @@
 # Projeto microserviço utilizando Spring Boot, security, netflix Zuul, netflix Eureka, RabbitMQ e outros.
 
-O projeto é composto por ttrês microserviços sendo esse próprio que é o crud de produto, o [Auth](https://github.com/wregin/auth) para autenticação e o [pagamento](https://github.com/wregin/pagamento), além disso temos também o [discovery]() que será utilizado para os microserviços se registrarem nesse. basicamente é onde o gateway faz a busca do microservice registrado.
+O projeto é composto por três microserviços sendo esse próprio que é o crud de produto, o [Auth](https://github.com/wregin/auth) para autenticação e o [pagamento](https://github.com/wregin/pagamento), além disso também o [discovery]() que será utilizado para os microserviços se registrarem. Basicamente é onde o gateway faz a busca do microservice registrado.
 
-Aqui vou procurar resumir o projeto, conforme print abaixo veja que os bancos do crud de produto e pagamento apontam para o localhost, mas a ideia é que isso poderia estar em qualquer outro lugar e de forma que a subida de um não afeta a do outro, isso é, basicamente é tornar esses serviços autônomo mas de forma que trabalhe em conjunto com outros microserviços.
+Aqui um resumo do projeto, conforme print abaixo veja que os bancos do crud de produto e pagamento apontam para o localhost, mas a ideia é que isso poderia estar em qualquer outro lugar e de forma que a subida de um não afeta a do outro, isso é, basicamente é tornar esses serviços/aplicação e banco autônomo mas de forma que trabalhem em conjunto com outros serviços.
 
 ![app config](https://github.com/wregin/microservice-crud/blob/master/showroom/microservice_db.png?raw=true)
 
